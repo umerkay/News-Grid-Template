@@ -18,3 +18,12 @@ $('#cover .navButton').on('click', function (event) {
         500
     );
 });
+
+$('#cover').hover(()=>{}, function(event) {
+    $('#cover').animate(
+        {
+            scrollTop: 0
+        },
+        1500
+    );
+});
