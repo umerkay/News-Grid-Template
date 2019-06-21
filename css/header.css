@@ -1,0 +1,42 @@
+header.main {
+    background-color: var(--header-bg);
+    color: var(--header-color);
+
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    padding: 0.25rem;
+    transition-duration: 0.2s;
+}
+
+header.main:hover {
+    padding: 1rem;
+}
+
+header.main > div {
+    display: grid;
+    grid-template-columns: 7fr 4fr 2fr;
+    align-items: center;
+}
+
+/*logo*/
+.logo {
+    align-self: center;
+    width: 7rem;
+    transition: 0.3s;
+    display: block;
+}
+
+header.main:hover .logo {
+    align-self: center;
+    width: 8rem;
+}
+
+/*socials*/
+#socials {
+    padding: 0 1rem;
+}
+#socials > a > i {
+    color: var(--header-color);
+}

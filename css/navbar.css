@@ -1,0 +1,50 @@
+#navbar {
+    --hover-bg: #eee;
+    --hover-color: var(--header-color);
+
+    --group-bg: rgb(235, 245, 235);
+    --group-color: black;
+    --group-hover-bg: rgb(225, 235, 225);
+    --group-hover-color: black;
+
+    --select-color: white;
+    --select-bg: var(--primary-color);
+
+    --group-width: 200px;
+    --padding: 0.5rem 1rem;
+
+    --group-delay: 0.3s;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#navbar li {
+    display: flex;
+    flex-direction: column;
+}
+#navbar li a {
+    color: var(--color);
+}
+#navbar li:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+}
+#navbar li:hover > a {
+    color: var(--hover-color);
+}
+
+#navbar .selected, #navbar .selected:hover {
+    background-color: var(--select-bg);
+    color: var(--select-color);
+}
+#navbar .selected a, #navbar .selected:hover a {
+    color: var(--select-color);
+}
+
+#navbar li a {
+    padding: var(--padding);
+}

@@ -1,0 +1,89 @@
+.article-card {
+    background-color: white;
+    color: var(--body-color);
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0.5rem;
+}
+
+.article-card.x2 {
+    grid-column: auto / span 2;
+}
+.article-card.y2 {
+    grid-row: auto / span 2;
+    flex-direction: column;
+}
+.article-card.x2 .img img, .article-card.y2 .img img {
+    display: inline;
+}
+
+.article-card .img img {
+    display: none;
+    width: 100%;
+}
+
+.article-card .info, .article-card .img {
+    padding: 0.6rem;
+}
+
+.article-card .info-heading {
+    display: block;
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.article-card .info-lead {
+    color: inherit;
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+}
+
+.article-card .info-heading + .info-lead {
+    margin-top: 0.75rem;
+}
+.article-card .info-lead + .btn {
+    margin-top: 0.75rem;
+}
+
+.article-type-tag {
+    color: white;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.5rem;
+    background-color: #333;
+    border-radius: 0 10rem 10rem 0;
+    margin-bottom: 0.35rem;
+    display: inline-block;
+}
+.article-type-tag + .article-type-tag {
+    border-radius: 10rem;
+}
+
+.article-type-tag.sports {
+    background-color: steelblue;
+}
+.article-type-tag.sports::before {
+    content: 'SPORTS';
+}
+
+.article-type-tag.business {
+    background-color: orangered;
+}
+.article-type-tag.business::before {
+    content: 'BUSINESS';
+}
+
+.article-type-tag.pakistan {
+    background-color: green;
+}
+.article-type-tag.pakistan::before {
+    content: 'PAKISTAN';
+}
+
+.article-type-tag.politics::before {
+    content: 'POLITICS';
+}
+.article-type-tag.politics {
+    background-color: purple;
+}
