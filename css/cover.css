@@ -44,6 +44,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     transition: height 0.5s ease;
+    transition-delay: 500ms;
 }
 
 #cover:hover {
@@ -57,6 +58,7 @@
     font-size: 1.25em;
     font-style: italic;
     font-weight: 100;
+    
     /* display: inline; */
 }
 
