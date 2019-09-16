@@ -1,0 +1,52 @@
+.articleview {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    /* gap: 1rem; */
+}
+
+.article {
+    padding: 3rem 1rem;
+    font-size: 1.25rem;
+}
+
+.article p+p {
+    margin: 1.5rem 0rem;
+}
+
+.quote {
+    background-color: #ddd;
+    font-size: 0.8em;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    font-style: italic;
+}
+
+.quote .by {
+    float: right;
+    font-weight: bold;
+}
+
+.quote .by::before {
+    content: '~'
+}
+
+img+.footnote {
+    background-color: #222;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+.rightbar {
+    padding: 3rem 1rem;
+}
+
+.rightbar > div {
+    position: sticky;
+    top: 80px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}

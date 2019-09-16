@@ -6,8 +6,10 @@ header.main {
     top: 0px;
     z-index: 2;
 
-    padding: 0.25rem;
+    padding: 0.5rem;
     transition-duration: 0.2s;
+
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.3);
 }
 
 header.main:hover {
@@ -16,7 +18,7 @@ header.main:hover {
 
 header.main > div {
     display: grid;
-    grid-template-columns: 7fr 4fr 2fr;
+    grid-template-columns: 7fr 4fr 1fr;
     align-items: center;
 }
 

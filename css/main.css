@@ -13,11 +13,13 @@
 
     --body-color: black;
     --body-bg: #eee;
-
+/* 
     --primary-color: rgb(180,10,10);
-    --primary-color-hover: rgb(160,10,10);
-    --secondary-color: orange;
-    --secondary-color-hover: #ef7300;
+    --primary-color-hover: rgb(160,10,10); */
+    --primary-color: rgb(255, 72, 0);
+    --primary-color-hover: rgb(231, 65, 0);
+    --secondary-color: rgb(255, 57, 57);
+    --secondary-color-hover: rgb(255, 29, 29);
 
     /* --secondary-color: rgb(180,10,10);
     --secondary-color-hover: rgb(160,10,10);
@@ -25,7 +27,7 @@
     --primary-color-hover: #ffa52f; */
     /* --primary-color-hover: orange; */
 
-    font-size: 16px;
+    /* font-size: 10px; */
 }
 
 body {
@@ -53,10 +55,11 @@ ul {
     font-size: 0.9rem;
     border: none;
     cursor: pointer;
+    transition-duration: 200ms;
 }
 .btn:hover {
-    /* background-color: var(--primary-color-hover); */
-    opacity: 0.8;
+    background-color: var(--primary-color-hover);
+    /* opacity: 0.8; */
     color: white;
 }
 
@@ -66,7 +69,7 @@ ul {
 }
 
 .btn.light:hover {
-    /* background-color: var(--secondary-color-hover); */
+    background-color: var(--secondary-color-hover);
     color: white;
 }
 

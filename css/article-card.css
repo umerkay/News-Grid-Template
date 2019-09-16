@@ -74,11 +74,11 @@
     content: 'BUSINESS';
 }
 
-.article-type-tag.pakistan {
+.article-type-tag.local {
     background-color: green;
 }
-.article-type-tag.pakistan::before {
-    content: 'PAKISTAN';
+.article-type-tag.local::before {
+    content: 'LOCAL';
 }
 
 .article-type-tag.politics::before {
